@@ -1,0 +1,31 @@
+### GET get users
+GET http://localhost:3000/api/tasks/ HTTP/1.1
+
+
+### POST add user
+POST http://localhost:3000/api/tasks/ HTTP/1.1
+content-type: application/json
+
+{
+    "title": "task title test",
+    "description": "task description test"
+}
+
+
+### PUT edit user
+PUT http://localhost:3000/api/tasks/62b33bb8cf965251109b9659 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "task edit title test",
+    "description": "task edit description test"
+}
+
+
+### GET user by id
+GET http://localhost:3000/api/tasks/62b34043a0c9242710cde897 HTTP/1.1
+
+
+### DELETE delete user
+DELETE http://localhost:3000/api/tasks/62b33bb8cf965251109b9659 HTTP/1.1
+
